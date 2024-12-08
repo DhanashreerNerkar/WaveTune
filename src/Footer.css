@@ -1,0 +1,32 @@
+.footer
+{
+    padding: 0.25rem;
+    background: -webkit-linear-gradient( #ed1d62,#803263);
+    font-family: Fredoka;
+    margin-top: 2rem;
+    font-size: var(--body-small-font-size);
+    border-radius: 2rem;
+   
+}
+@keyframes moveLabel {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-.25cm);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+.footer__disclaimer
+{ 
+    animation: moveLabel 10s linear infinite; /* Infinite loop for demonstration */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Add shadow */
+    font-style: normal;
+    font-weight: 1400;
+    letter-spacing: .01vw;
+    color: white;
+}

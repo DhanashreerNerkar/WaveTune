@@ -1,0 +1,19 @@
+/* SkipLink.module.css */
+.skipLink {
+    position: absolute;
+    top: -40px;       
+    left: 0;
+    background: -webkit-linear-gradient( #ed1d62,#803263);
+    color: white;
+    padding: 8px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    font-size: .75rem;
+  }
+  
+  .skipLink:focus {
+    top: 10px;
+    margin-left: 45%;
+    outline: none;
+  }
+  

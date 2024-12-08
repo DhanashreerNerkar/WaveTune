@@ -1,0 +1,6 @@
+.form-example{
+    display:grid;
+}
+.form-example>*{
+    max-width:30ch;
+}

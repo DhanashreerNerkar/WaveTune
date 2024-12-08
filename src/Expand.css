@@ -1,0 +1,36 @@
+.expand{
+    display:grid;
+    width: 93%;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px#d61961;
+    margin-top: 0rem;
+    background: -webkit-linear-gradient( #ed1d62,#803263);
+}
+
+.expand__title{
+    font:inherit;
+    border:none;
+    background:#ed1d6226;
+    text-align: left;
+    cursor:pointer;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+}
+.expand__title::after
+{
+    content:'+';
+    color:white ;
+}
+.expand__title.expand__title--open::after
+{
+    content:'-';
+    color:white ;
+}
+.expand__content
+{
+    margin:.5rem;
+    padding:.5rem;text-align: left;
+    
+}

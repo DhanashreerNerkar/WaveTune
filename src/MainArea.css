@@ -1,0 +1,94 @@
+/* Main Section Styling */
+.main-section {
+    padding: 1rem;
+}
+
+h2  {
+    background: -webkit-linear-gradient( #ed1d62,#803263);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2rem;;
+}
+
+
+/* Card Container Styling */
+.card-container1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px #803263;
+    background: -webkit-linear-gradient( #ed1d62,#803263)
+}
+
+
+.title {
+    grid-column: span 12;
+    text-align: center;
+    border-bottom-style: inset;
+    margin: 0;
+    padding:0;
+}
+.title h3{
+    color:white ;
+}
+
+.column-1 {
+    grid-column: span 12;
+    text-align: center;
+    margin-top: -1px;
+   
+}
+.column-1 h4{ 
+    color:white ;
+}
+.column-2 {
+    grid-column: span 12;
+    text-align: center;
+    color:white ;
+}
+.column-2 h3,p{
+    color:white;
+}
+.expand-container {
+    position: relative; /* Ensures absolute positioning of child elements */
+  }
+  
+  .music-image1 {
+    position: absolute;
+    margin-top:-4%;
+    left: 75%; /* Adjust to place it at the left border */
+    height:7rem;
+    width:7rem;
+  }
+
+@media (min-width: 50rem) {
+    .card-container1 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto; /* Adjusts rows based on content */
+        gap: 16px; /* Optional: adds space between items */
+        margin: 1rem;
+        padding:1rem;
+        width: 90%;
+        margin-left:5%;
+    }
+    
+    .title {
+        grid-column: 1 / -1; /* Spans all 12 columns */
+        text-align: center;
+        border-bottom-style: inset;
+    }
+    
+    .column-1 {
+        grid-column: 1 / 5; /* Spans from column 1 to 4 */
+        text-align:left;
+    }
+    
+    .column-2 {
+        grid-column: 5 / -1; /* Spans from column 5 to 12 */
+        text-align:left;
+    }
+}

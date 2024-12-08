@@ -1,0 +1,61 @@
+.complex-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: -webkit-linear-gradient( #ed1d62,#803263);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color:white;
+  }
+  
+  input,
+  select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input[readonly] {
+    background: #e9e9e9;
+  }
+  
+  button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .35rem .35rem;
+    background-color:white ;
+    color:#803263 ;
+    text-decoration: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .error {
+    color: rgb(4, 4, 44);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+ 
+  

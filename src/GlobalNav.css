@@ -1,0 +1,70 @@
+/* Global Navigation Menu List */
+.global-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;  
+    background: -webkit-linear-gradient( #ed1d62,#803263);
+    border-radius: 1.5rem;
+}
+.global-nav__item{
+   padding:.5rem;
+}
+.global-nav__item a{ 
+    color:white;text-decoration:none;
+}
+
+.global-nav__link {
+    display: inline-block;
+    /*padding: 0.5rem .5rem;*/
+    font-size: 1.3rem;
+}
+
+.global-nav__list--hamburgered {
+    display: none;
+}
+
+/* Toggle Button - Hamburger Style */
+.global-nav__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /*padding: 1rem;*/
+    position: relative;
+   /* z-index: 1000;  Keeps it on top */
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1rem;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Cross Icon Styling */
+.close-icon img {
+    /*font-size: 1.5rem;
+    color: black;*/
+    height: 1rem;
+    width:1rem;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 40rem) {
+    .global-nav__list--hamburgered {
+        display: flex;
+    }
+
+    .global-nav__toggle {
+        display: none;
+    }
+}

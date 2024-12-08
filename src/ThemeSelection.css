@@ -1,0 +1,28 @@
+body.light {
+  background-color: white;
+  color: var(--gm3-sys-color-background, #0d0d2c);
+}
+
+body.dark {
+  background-color: var(--gm3-sys-color-background, #0d0d2c);
+  color: white;
+}
+
+.Themebutton {
+  margin-top: 1rem;
+  padding: 0.35rem 0.35rem;
+  color: white;
+  background: -webkit-linear-gradient(#ed1d62, #803263);
+  text-decoration: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.Theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}

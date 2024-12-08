@@ -1,0 +1,25 @@
+.header{
+    display: grid;
+    grid-template-areas: 
+    "header-logo header-title"
+    "header-nav header-nav";
+    grid-template-columns: auto 1fr;
+    /*background:white; linear-gradient(to bottom, #1e7513, #dd13d3);  Two shades background */
+}
+.header-logo{
+    grid-area: header-logo;
+}
+.header-title{
+    grid-area:header-title;
+    text-align: center;
+}
+h1{
+}
+.header__nav{
+    grid-area:header-nav;
+   
+    border-radius: 1px solid black;
+}
+img{
+    height:5rem;
+}
